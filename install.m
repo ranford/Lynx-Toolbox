@@ -47,17 +47,6 @@ else
     fprintf('The configuration file was not changed\n');
 end
 
-% Eventually save the path
-cprintf('*text', '--- Do you want to save the path? (Y/N) ---\n');
-result = input('', 's');
-
-if(strcmpi(result, 'Y'))
-    fprintf('Saving path...\n');
-    savepath;
-else
-    warning('You will need to run again the installation process after rebooting Matlab');
-end
-
 fprintf('Installation complete\n\n');
 
 fprintf('A few useful commands:\n\n');

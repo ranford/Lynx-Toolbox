@@ -7,6 +7,7 @@ try
     import('matlab.unittest.plugins.ToFile');
     import('matlab.unittest.plugins.codecoverage.CoberturaFormat');
     
+    install;
     
     runner = TestRunner.withTextOutput;
     runner.addPlugin(CodeCoveragePlugin.forFolder('core','IncludingSubfolders',true, ...
